@@ -1,0 +1,178 @@
+<!--DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+	</head>
+	<body></body>
+</html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>streaMLined_Pandemic</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+<meta charset="utf-8" />  
+    <title>streaMLined_Pandemic</title>  
+    <style type="text/css">  
+        body {  
+            margin: 0;  
+            background: #b5ffbb;  
+        }  
+        .showSlide {  
+            display: none  
+        }  
+            .showSlide img {  
+                width: 60%; 
+            }  
+        .slidercontainer {  
+            position: relative;  
+            margin: auto; 
+            margin-top: 50px; 
+            width:35%;
+
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;
+            display:block;
+            top: 50%;
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px; 
+            margin-left:auto;
+            margin-right:auto;
+            color: black;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 4px 4px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 10px;  
+            width: 100%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #bbd4b8;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4 
+            }  
+            to {  
+                opacity: 1  
+            }  
+        } 
+        ul {
+  background: #bfb769;
+  padding: 20px;
+}
+ul li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+p{
+	padding:3px;
+}
+    </style>  
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"><b>Home</b></a>
+  <a href="model.html"><b>Machine Learning Algorithm</b></a>
+  <a href="data.html"><b>Data Visualization</b></a>
+  <a href="res.html"><b>Helpful Resources</b></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<h1> strea<font color="Red"><b><big>ML</big></b></font>ined Pandemic Directory</h1>
+<p> <strong><font size="6">streaMLined pandemic directory is your go-to preparation system for future pandemics. The web app features include:</font></strong></p>
+<ul><font size='6'>
+  <li>A <b>Machine Learning Algorithm</b> that uses input data to predict the likelihood & value of pandemics</li>
+  <li><b>Data Visualization</b> that shows the predictions from Machine Learning Algorithm</li>
+  <li>A <b>Pandemic Resources </b>with the links to verified scientific papers concering pandemics</li>
+</font></ul>
+
+    <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="assets/1.jpg" />  
+            <div class="content"></div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="assets/2.jpg"/>  
+            <div class="content"></div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="assets/3.jpg" />  
+            <div class="content"></div>  
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>  
+  
+    <script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+  
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+    </script> 
+</body>
+</html>
