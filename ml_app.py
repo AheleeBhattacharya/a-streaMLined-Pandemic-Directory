@@ -14,7 +14,7 @@ def predict():
     Median_age = input("Enter the median age of your country", type=NUMBER)
     value = np.array(Median_age).reshape(-1, 1)
     prediction = model.predict(value)
-    put_text(f'Predicted total deaths per million: {prediction}')
+    put_text(f'Predicted total deaths per million in your country: {prediction}')
 
 
 if __name__ == '__main__':
